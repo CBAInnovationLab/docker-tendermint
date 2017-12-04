@@ -12,7 +12,7 @@ RUN wget https://github.com/tendermint/tendermint/releases/download/v0.12.1/linu
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-USER tendermint
+#USER tendermint
 
 WORKDIR /home/tendermint
 
