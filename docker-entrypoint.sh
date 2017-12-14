@@ -1,3 +1,3 @@
 #!/bin/sh
 
-tendermint node --moniker "`hostname`" "$@"
+tendermint node "$@"

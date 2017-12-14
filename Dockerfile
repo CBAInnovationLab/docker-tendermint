@@ -7,8 +7,8 @@ RUN apt-get update \
 	&& apt-get install -y sudo wget unzip\
 	&& echo "tendermint ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-RUN wget https://github.com/tendermint/tendermint/releases/download/v0.12.1/linux_amd64.zip \
- && unzip linux_amd64.zip \
+RUN wget https://github.com/tendermint/tendermint/releases/download/v0.14.0/tendermint_0.14.0_linux_amd64.zip \
+ && unzip tendermint_0.14.0_linux_amd64.zip \
  && mv tendermint /usr/local/bin \
  && rm -rf tmp/* \
  && useradd -ms /bin/bash -G sudo tendermint
